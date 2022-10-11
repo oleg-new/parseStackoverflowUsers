@@ -6,8 +6,7 @@ gets a list of users of the site "stackoverflow" and displays data only those wh
 - location    - list
 - reputation - not lower than the specified
 - tags - list
-- answers - at least oneimplements functionality for a cinema with several halls.
-
+- answers - at least one
 
 ## To build and start the project you need:
 - build the application with the command "gradle clean shadowJar"
