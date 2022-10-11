@@ -25,6 +25,16 @@ public class Main {
     public static void main(String[] args) {
         List<Items> usersList = parser.getUserListFromApi(stringUserUrl,
                 locationList, tagList, stringAnswerUrl, stringQuestionUrl, reputation);
+        System.out.println("====================================================================================================");
+        System.out.println("===============list of users with tags : \"java\", \".net\", \"docker\", \"C#\"=============================");
         System.out.println(usersList);
+        usersList.clear();
+        tagList.add("google");
+        usersList = parser.getUserListFromApi(stringUserUrl,
+                locationList, tagList, stringAnswerUrl, stringQuestionUrl, reputation);
+        System.out.println("====================================================================================================");
+        System.out.println("===============list of users with tags : \"java\", \".net\", \"docker\", \"C#\" , \"google\"==================");
+        System.out.println(usersList);
+
     }
 }
